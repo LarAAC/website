@@ -153,6 +153,7 @@ return [
         Teepluss\Theme\ThemeServiceProvider::class,
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
         Bugsnag\BugsnagLaravel\BugsnagLaravelServiceProvider::class,
+        UxWeb\SweetAlert\SweetAlertServiceProvider::class,
 
 
         /*
@@ -214,6 +215,7 @@ return [
         'Theme' => Teepluss\Theme\Facades\Theme::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'Bugsnag' => Bugsnag\BugsnagLaravel\BugsnagFacade::class,
+        'Alert' => UxWeb\SweetAlert\SweetAlert::class,
 
     ],
 
