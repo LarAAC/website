@@ -1,5 +1,5 @@
 {
-	"name": "pingpong-modules/helloworld",
+	"name": "pingpong-modules/news",
 	"description": "",
 	"authors": [
 		{
@@ -9,7 +9,7 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"Laracc\\HelloWorld\\": ""
+			"Laracc\\News\\": ""
 		}
 	}
 }

@@ -1,9 +1,9 @@
-<?php namespace Laracc\Helloworld\Database\Seeders;
+<?php namespace Laracc\News\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class HelloWorldDatabaseSeeder extends Seeder {
+class NewsDatabaseSeeder extends Seeder {
 
 	/**
 	 * Run the database seeds.

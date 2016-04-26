@@ -1,8 +1,8 @@
-<?php namespace Laracc\Helloworld\Providers;
+<?php namespace Laracc\News\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class HelloWorldServiceProvider extends ServiceProvider {
+class NewsServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -21,6 +21,8 @@ class HelloWorldServiceProvider extends ServiceProvider {
 		$this->registerTranslations();
 		$this->registerConfig();
 		$this->registerViews();
+
+		$this->registerMenu();
 	}
 
 	/**
@@ -34,6 +36,14 @@ class HelloWorldServiceProvider extends ServiceProvider {
 	}
 
 	/**
+	 * Register module menus
+	 */
+	public function registerMenu()
+	{
+		# code...
+	}
+
+	/**
 	 * Register config.
 	 * 
 	 * @return void
@@ -41,10 +51,10 @@ class HelloWorldServiceProvider extends ServiceProvider {
 	protected function registerConfig()
 	{
 		$this->publishes([
-		    __DIR__.'/../Config/config.php' => config_path('helloworld.php'),
+		    __DIR__.'/../Config/config.php' => config_path('news.php'),
 		]);
 		$this->mergeConfigFrom(
-		    __DIR__.'/../Config/config.php', 'helloworld'
+		    __DIR__.'/../Config/config.php', 'news'
 		);
 	}
 
@@ -55,7 +65,7 @@ class HelloWorldServiceProvider extends ServiceProvider {
 	 */
 	public function registerViews()
 	{
-		$viewPath = base_path('resources/views/modules/helloworld');
+		$viewPath = base_path('resources/views/modules/news');
 
 		$sourcePath = __DIR__.'/../Resources/views';
 
@@ -64,8 +74,8 @@ class HelloWorldServiceProvider extends ServiceProvider {
 		]);
 
 		$this->loadViewsFrom(array_merge(array_map(function ($path) {
-			return $path . '/modules/helloworld';
-		}, \Config::get('view.paths')), [$sourcePath]), 'helloworld');
+			return $path . '/modules/news';
+		}, \Config::get('view.paths')), [$sourcePath]), 'news');
 	}
 
 	/**
@@ -75,12 +85,12 @@ class HelloWorldServiceProvider extends ServiceProvider {
 	 */
 	public function registerTranslations()
 	{
-		$langPath = base_path('resources/lang/modules/helloworld');
+		$langPath = base_path('resources/lang/modules/news');
 
 		if (is_dir($langPath)) {
-			$this->loadTranslationsFrom($langPath, 'helloworld');
+			$this->loadTranslationsFrom($langPath, 'news');
 		} else {
-			$this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'helloworld');
+			$this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'news');
 		}
 	}
 

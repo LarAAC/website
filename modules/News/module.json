@@ -1,12 +1,12 @@
 {
-    "name": "HelloWorld",
-    "alias": "helloworld",
+    "name": "News",
+    "alias": "news",
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
-        "Laracc\\HelloWorld\\Providers\\HelloWorldServiceProvider"
+        "Laracc\\News\\Providers\\NewsServiceProvider"
     ],
     "aliases":{},
     "files": [
