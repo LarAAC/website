@@ -2,13 +2,6 @@
 
 ### Laravel ###
 bootstrap/cache/*
-storage/app/*
-storage/app/public/*
-storage/framework/*
-storage/framework/cache/*
-storage/framework/sessions/*
-storage/framework/views/*
-storage/logs/*
 .env.*.php
 .env.php
 .env
