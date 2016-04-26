@@ -154,6 +154,7 @@ return [
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
         Bugsnag\BugsnagLaravel\BugsnagLaravelServiceProvider::class,
         UxWeb\SweetAlert\SweetAlertServiceProvider::class,
+        Lavary\Menu\ServiceProvider::class,
 
 
         /*
@@ -216,6 +217,7 @@ return [
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'Bugsnag' => Bugsnag\BugsnagLaravel\BugsnagFacade::class,
         'Alert' => UxWeb\SweetAlert\SweetAlert::class,
+        'Menu'       => Lavary\Menu\Facade::class,
 
     ],
 
