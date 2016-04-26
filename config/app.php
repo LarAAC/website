@@ -151,6 +151,7 @@ return [
         #
         Pingpong\Modules\ModulesServiceProvider::class,
         Teepluss\Theme\ThemeServiceProvider::class,
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
 
 
         /*
@@ -210,6 +211,7 @@ return [
         #
         'Module' => Pingpong\Modules\Facades\Module::class,
         'Theme' => Teepluss\Theme\Facades\Theme::class,
+        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
 
     ],
 
