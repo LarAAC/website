@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="{!! $theme->get('keywords') !!}">
         <meta name="description" content="{!! $theme->get('description') !!}">
-        <title>My OTServ - powered by LaraAAC</title>
+        <title>{{ $theme->getTitle() }}</title>
 
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 

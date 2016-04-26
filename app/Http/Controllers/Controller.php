@@ -24,7 +24,11 @@ class Controller extends PingpongController {
 	 */
 	public function __construct() {
 		# set theme
-		$this->theme('default');
+		$this->theme(env('THEME', 'default'));
+
+		$this->theme->layout(env('THEME', 'default'));
+
+		$this->theme->setTitle(env('TITLE'));
 
 		# base composer to view
 		$this->partialsToViewComposer = collect([
@@ -87,15 +91,5 @@ class Controller extends PingpongController {
 				$view->with($v, $k);
 			});
 		});
-	}
-
-	/**
-	 * [viewWith description]
-	 * @param  [type] $name  [description]
-	 * @param  [type] $value [description]
-	 * @return [type]        [description]
-	 */
-	public function viewWith($name, $value) {
-		$this->partialsToViewComposer->put($name, $value);
 	}
 }
