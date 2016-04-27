@@ -8,20 +8,22 @@ WebAAC dinâmico para OTServers.
 
 Todas tecnologias utilizadas/futuras na aplicação.
 
-* [Laravel] - HTML enhanced for web apps!
-* [Laravel Modules] - awesome web-based text editor
-* [Laravel Theme] - a super fast port of Markdown to JavaScript
-* [Laravel Menu] - great UI boilerplate for modern web apps
+* [Laravel] - Framework base
+* [Laravel Modules] - awesome package to create modules
+* [Laravel Theme] - theme package
+* [Laravel Menu] - package for dynamic menus
 * [Gulp] - the streaming build system
-* [jQuery] - duh
+* [jQuery]
 
 ### Instalação
 
 Processo de instalação do Larac
 
 ```sh
-$ git clone [git-repo-url] laracc
+$ git clone https://github.com/laracc/website.git laracc
 $ cd laracc
+$ composer install
+$ php artisan migrate
 $ php artisan module:migrate
 $ php artisan serve
 ```
@@ -30,11 +32,15 @@ $ php artisan serve
 
 Módulos oficiais complementares do Laracc
 
+Em breve...
+
 ### Desenvolvimento
 
 Deseja contribuir com desenvolvimento? pull request :)
 
-### Todos
+Em breve...
+
+### To-do
 
 
 License
