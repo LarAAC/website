@@ -1,0 +1,15 @@
+{
+    "name": "AccountManager",
+    "alias": "accountmanager",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Laracc\\AccountManager\\Providers\\AccountManagerServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php"
+    ]
+}
