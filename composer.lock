@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d830b407160c892b4e45f0249307050a",
-    "content-hash": "fa086c679c304c5f6af3da0252b06bbd",
+    "hash": "c9ab0dd2a25c0da58d11467d8cc5ae50",
+    "content-hash": "f235b22a3f71e23d9df5ffae057b61ef",
     "packages": [
         {
             "name": "bugsnag/bugsnag",

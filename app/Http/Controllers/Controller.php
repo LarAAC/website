@@ -23,11 +23,14 @@ class Controller extends PingpongController {
 	 * [__construct description]
 	 */
 	public function __construct() {
+		
 		# set theme
 		$this->theme(env('THEME', 'default'));
 
+		# set layout
 		$this->theme->layout(env('THEME', 'default'));
 
+		# set title
 		$this->theme->setTitle(env('TITLE'));
 
 		# base composer to view

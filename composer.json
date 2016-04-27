@@ -17,7 +17,8 @@
         "vinkla/pusher": "^2.1",
         "owen-it/laravel-auditing": "^2.0",
         "lavary/laravel-menu": "dev-master",
-        "intervention/image": "^2.3"
+        "intervention/image": "^2.3",
+        "laravelcollective/html": "5.2.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

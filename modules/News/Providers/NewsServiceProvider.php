@@ -40,7 +40,7 @@ class NewsServiceProvider extends ServiceProvider {
 	 */
 	public function registerMenu()
 	{
-		# code...
+	
 	}
 
 	/**

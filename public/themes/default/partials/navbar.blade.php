@@ -43,18 +43,13 @@
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-      </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><i class="glyphicon glyphicon-share-alt"></i> Create Account</a></li>
+        <li><a href="{{ URL::route('account.create') }}"><i class="glyphicon glyphicon-share-alt"></i> Create Account</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+          <a href="{{ URL::route('account.login') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
           <div class="dropdown-menu" style="padding:17px 17px 0px 17px;">
-            <form action="#">
-              <div class="form-group form-group-sm">
+          {!! Form::open(['method' => 'POST', 'route' => 'account.login']) !!}
+            <div class="form-group form-group-sm">
                 <label for="">account.name</label>
                 <input type="text" class="form-control" style="width:220px;">
               </div>
@@ -66,7 +61,7 @@
                 <button type="submit" class="btn btn-block btn-primary">Login</button>
                 <a class="btn btn-block" href="#">Forgot password?</a>
               </div>
-            </form>
+          {!! Form::close() !!}
           </div>
         </li>
       </ul>

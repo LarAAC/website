@@ -155,6 +155,7 @@ return [
         Bugsnag\BugsnagLaravel\BugsnagLaravelServiceProvider::class,
         UxWeb\SweetAlert\SweetAlertServiceProvider::class,
         Lavary\Menu\ServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
 
         /*
@@ -218,6 +219,8 @@ return [
         'Bugsnag' => Bugsnag\BugsnagLaravel\BugsnagFacade::class,
         'Alert' => UxWeb\SweetAlert\SweetAlert::class,
         'Menu'       => Lavary\Menu\Facade::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 
